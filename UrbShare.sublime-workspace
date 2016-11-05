@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"pyrow"
+			],
+			[
+				"email",
+				"email_verified"
+			],
+			[
+				"trac",
+				"tracking_link_id"
+			],
+			[
+				"tra",
+				"tracking_link"
+			],
+			[
+				"add",
+				"add_handler"
+			],
+			[
+				"hand",
+				"handler"
+			],
+			[
+				"eac",
+				"eac-\teach_char { |chr| .. }"
+			],
+			[
+				"vis",
+				"visited"
+			],
+			[
+				"link",
+				"link_01"
+			],
+			[
+				"Trac",
+				"TrackingLinkFactory"
+			],
+			[
+				"track",
+				"tracking_link"
+			],
+			[
+				"req",
+				"require_relative"
+			],
+			[
+				"re",
+				"require_relative"
+			],
+			[
+				"exp",
+				"expected_url"
+			],
+			[
+				"unique",
+				"unique_string"
+			],
+			[
+				"uniqu",
+				"unique_string"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"uni",
+				"unique_string"
+			],
+			[
+				"url",
+				"url_base"
+			],
+			[
+				"tr",
+				"tracking_link"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 92.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/joshua/Projects/RentMyGrass"
+	],
+	"file_history":
+	[
+		"/home/joshua/Projects/GitHub/PyRow/csafe_dic.py",
+		"/home/joshua/Projects/GitHub/PyRow/csafe_cmd.py",
+		"/home/joshua/Projects/GitHub/PyRow/pyrow.py",
+		"/home/joshua/Projects/GitHub/PyRow/statshow.py",
+		"/home/joshua/Projects/GitHub/PyRow/ergs.py",
+		"/home/joshua/Projects/GitHub/PyRow/strokelog.py",
+		"/home/joshua/Projects/GitHub/PyRow/requirements.txt",
+		"/home/joshua/Projects/GitHub/PyRow/README.md",
+		"/home/joshua/Projects/RowMaster/src/SanityCheck.py",
+		"/home/joshua/Projects/Rowing2/workout.py",
+		"/home/joshua/Projects/Rowing2/workout_segment.hs",
+		"/home/joshua/Projects/Rowing/spec/timespan_spec.rb",
+		"/home/joshua/Projects/Rowing/models/rowing_workout.rb",
+		"/home/joshua/Projects/Rowing/models/timespan.rb",
+		"/home/joshua/Projects/Rowing/Gemfile",
+		"/home/joshua/Projects/Rowing/specs/test_rowing_workout.rb",
+		"/home/joshua/Projects/Rowing/specs/test_timespan.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/tracking_link.rb",
+		"/home/joshua/Projects/AuthorizeEmail/errors/link_id_duplicate_error.rb",
+		"/home/joshua/Projects/AuthorizeEmail/spec/tracking_links_spec.rb",
+		"/home/joshua/Projects/AuthorizeEmail/spec/user_spec.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/user.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/tracking_link_store.rb",
+		"/home/joshua/Projects/AuthorizeEmail/views/layout.erb",
+		"/home/joshua/Projects/AuthorizeEmail/myapp.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/visited_event_handler.rb",
+		"/home/joshua/Projects/AuthorizeEmail/views/index.erb",
+		"/home/joshua/Projects/AuthorizeEmail/readme.md",
+		"/home/joshua/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/joshua/Projects/AuthorizeEmail/models/email_notification.rb",
+		"/home/joshua/Projects/AuthorizeEmail/spec/emails_spec.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/tracking_link_factory.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/email.rb",
+		"/home/joshua/Projects/AuthorizeEmail/.gitignore",
+		"/home/joshua/Projects/AuthorizeEmail/exceptions/link_url_duplicate_error.rb",
+		"/home/joshua/Projects/AuthorizeEmail/exceptions/duplicate_link_exists.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/email_parameters.rb",
+		"/home/joshua/Projects/AuthorizeEmail/models/unique_string.rb",
+		"/home/joshua/Projects/AuthorizeEmail/spec/app_spec.rb",
+		"/home/joshua/Projects/AuthorizeEmail/tests/models_spec.rb",
+		"/home/joshua/Projects/AuthorizeEmail/authorize_email.sublime-project"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"reset",
+			"cmd",
+			"reset",
+			"set_workout",
+			"get_status",
+			"getStatus",
+			"getStatus()",
+			"print ",
+			"#",
+			"visited_event_handler",
+			"true",
+			"email",
+			"end"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "UrbShare.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
