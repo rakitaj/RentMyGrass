@@ -30,6 +30,7 @@ gem 'therubyracer'
 
 # Authentication
 gem 'devise'
+gem 'omniauth-facebook'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
