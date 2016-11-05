@@ -15,8 +15,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home", :controller => "home", :action => "index" %></li>
             <li><%= link_to "About Us", :controller => "home", :action => "about" %></li>
-            <li><%= link_to "Login", :controller => "users", :action => "login" %></li>
-            <li><%= link_to "Sign Up", :controller => "users", :action => "signup" %></li>
+            <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
           </ul>
         </nav>
       </div>
