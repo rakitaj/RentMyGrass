@@ -6,23 +6,25 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='http://fonts.which is googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
   </head>
   <body>
-  	<header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "UrbShare", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home", :controller => "home", :action => "index" %></li>
-            <li><%= link_to "About Us", :controller => "home", :action => "about" %></li>
-            <li><%= link_to "Login", :controller => "users", :action => "login" %></li>
-            <li><%= link_to "Sign Up", :controller => "users", :action => "signup" %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  	<div class="container">
-    	<%= yield %>
-  	</div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+       <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Urb Share</span>
+          <nav class="mdl-navigation">
+            <%= link_to "Home", { :controller => "home", :action => "index" }, :class => "mdl-navigation__link" %>
+            <%= link_to "About Us", { :controller => "home", :action => "about" }, :class => "mdl-navigation__link" %>
+            <%= link_to "Login", { :controller => "users", :action => "login" }, :class => "mdl-navigation__link" %>
+            <%= link_to "Sign Up", { :controller => "users", :action => "signup" }, :class => "mdl-navigation__link" %>
+          </nav>
+       </div>
+       <main class="mdl-layout__content">
+          <div class="page-content" style="padding-left:100px;"><%= yield %></div>
+       </main>
+    </div>
   </body>
 </html>
