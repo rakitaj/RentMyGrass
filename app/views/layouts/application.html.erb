@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>UrbShare</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='http://fonts.which is googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
-    <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
-  </head>
-  <body>
-    <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Urban Garden Sharing</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <%= render 'layouts/navigation' %>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">UrbShare</span>
-      <nav class="mdl-navigation">
-        <%= render 'layouts/navigation' %>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <%= yield %>
-      </div>
-    </main>
-  </div>
-  </body>
+    <head>
+        <title>UrbShare</title>
+        <%= csrf_meta_tags %>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+        <link href='http://fonts.which is googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css"/>
+        <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    </head>
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">UrbShare</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <%= render 'layouts/navigation' %>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">UrbShare</span>
+                <nav class="mdl-navigation">
+                    <%= render 'layouts/navigation' %>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <%= yield %>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
