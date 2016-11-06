@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.content-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.large-img-text {
+	font-size: 200%;
+	font-weight: bold;
+}
