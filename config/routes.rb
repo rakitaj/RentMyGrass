@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :listings
   devise_for :users
-  get 'users/signup'
-  get 'users/login'
 
   get 'home/index'
   get 'home/about'
