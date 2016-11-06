@@ -2,22 +2,24 @@
 
 <h1>Listings</h1>
 
-<table>
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th class="mdl-data-table__cell--non-numeric">Name</th>
+      <th class="mdl-data-table__cell--non-numeric">Description</th>
+      <th class="mdl-data-table__cell--non-numeric">Image</th>
     </tr>
   </thead>
 
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.title %></td>
-        <td><%= listing.description %></td>
-        <td><%= image_tag listing.image.url %>
-        <td><%= link_to 'Show', listing %></td>
-        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= listing.title %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= listing.description %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= image_tag listing.image.url(:thumb) %>
+        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Show', listing %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,5 +28,6 @@
 <br>
 
 <%= link_to 'New Listing', new_listing_path %>
-
-<br>
+<button class="mdl-button mdl-js-button mdl-button--raised">
+  
+</button>
