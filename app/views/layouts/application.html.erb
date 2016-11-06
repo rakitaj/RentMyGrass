@@ -12,19 +12,38 @@
     <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-       <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Urb Share</span>
-          <nav class="mdl-navigation">
-            <%= link_to "Home", { :controller => "home", :action => "index" }, :class => "mdl-navigation__link" %>
-            <%= link_to "About Us", { :controller => "home", :action => "about" }, :class => "mdl-navigation__link" %>
-            <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class => "mdl-navigation__link" %>
-            <%= link_to "Sign Up", { :controller => "users", :action => "signup" }, :class => "mdl-navigation__link" %>
-          </nav>
-       </div>
-       <main class="mdl-layout__content">
-          <div class="page-content" style="padding-left:100px;"><%= yield %></div>
-       </main>
+    <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Urban Garden Sharing</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <%= link_to "Home", { :controller => "home", :action => "index" }, :class => "mdl-navigation__link" %>
+              <%= link_to "About Us", { :controller => "home", :action => "about" }, :class => "mdl-navigation__link" %>
+              <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class => "mdl-navigation__link" %>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">UrbShare</span>
+      <nav class="mdl-navigation">
+        <%= link_to "Home", { :controller => "home", :action => "index" }, :class => "mdl-navigation__link" %>
+              <%= link_to "About Us", { :controller => "home", :action => "about" }, :class => "mdl-navigation__link" %>
+              <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class => "mdl-navigation__link" %>
+      </nav>
     </div>
+    <main class="mdl-layout__content">
+      <div class="page-content"><%= yield %></div>
+    </main>
+  </div>
+  <% if user_signed_in? %>
+    welcome back
+    <% else %>
+    hi there stranger
+    <% end %>
   </body>
 </html>
