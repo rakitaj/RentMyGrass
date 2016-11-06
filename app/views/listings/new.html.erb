@@ -2,9 +2,5 @@
 
 <%= link_to 'Back', listings_path %>
 
-<%= simple_form_for @listing do |f| %>
-  <%= f.input :title, label: 'Property Name', error: 'Property name is mandatory, please specify one' %>
-  <%= f.input :description %>
-  <%= f.input :image, as: :file %>
-  <%= f.button :submit %>
-<% end %>
+<%= render 'form', listing: @listing %>
+
