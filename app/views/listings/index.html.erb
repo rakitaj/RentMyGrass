@@ -2,30 +2,18 @@
 
 <h1>Listings</h1>
 
-<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-  <thead>
-    <tr>
-      <th class="mdl-data-table__cell--non-numeric">Name</th>
-      <th class="mdl-data-table__cell--non-numeric">Description</th>
-      <th class="mdl-data-table__cell--non-numeric">Image</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @listings.each do |listing| %>
-      <tr>
-        <td class="mdl-data-table__cell--non-numeric"><%= listing.title %></td>
-        <td class="mdl-data-table__cell--non-numeric"><%= listing.description %></td>
-        <td class="mdl-data-table__cell--non-numeric"><%= image_tag listing.image.url(:thumb) %>
-        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Show', listing %></td>
-        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Edit', edit_listing_path(listing) %></td>
-        <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div class="mdl-grid">
+  <% @listings.each do |listing| %>
+    <%= link_to listing_path(listing), class: 'mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp' do %>
+      <div class="mdl-card__media">
+        <%= image_tag listing.image.url :thumb %>
+      </div>
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text"><%= listing.title %></h2>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
+  <% end %>
+</div>
 
 <%= link_to 'New Listing', new_listing_path %>
 <button class="mdl-button mdl-js-button mdl-button--raised">
