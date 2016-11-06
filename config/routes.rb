@@ -3,9 +3,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :listings
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
-  get 'users/signup'
-  get 'users/login'
 
   get 'home/index'
   get 'home/about'
