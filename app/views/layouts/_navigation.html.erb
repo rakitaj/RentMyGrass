@@ -1,0 +1,7 @@
+<%= link_to "Home", { :controller => "home", :action => "index" }, :class => "mdl-navigation__link" %>
+<%= link_to "About Us", { :controller => "home", :action => "about" }, :class => "mdl-navigation__link" %>
+<% if user_signed_in? %>
+<%= link_to "Listings", { :controller => "listings" }, :class => "mdl-navigation__link" %>
+<% else %>
+<%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, :class => "mdl-navigation__link" %>
+<% end %>
