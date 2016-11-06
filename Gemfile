@@ -35,6 +35,9 @@ gem 'omniauth-facebook'
 # Forms
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
+# Image handling
+gem 'paperclip', '~> 5.0.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
